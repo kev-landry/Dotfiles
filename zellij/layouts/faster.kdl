@@ -1,0 +1,53 @@
+// layout {
+//   tab
+//   tab name="explorer" {
+//     pane split_direction="vertical" {
+//         pane {
+//             name "swikly"
+//             cwd "/home/kevin/dev/online-deposit-application-v2"
+//             plugin location="zellij:tab-bar"
+//           }
+//         pane split_direction="horizontal" {
+//             pane
+//             pane
+//         }
+//     }
+//   }
+//   tab name="neovim" focus=true {
+//     pane {
+//       plugin location="zellij:status-bar"
+//       plugin location="zellij:tab-bar"
+//     }
+//     pane
+//   }
+// }
+
+layout{
+  default_tab_template {
+    pane size=1 borderless=true {
+      plugin location="zellij:tab-bar"
+    }
+    children
+    pane size=2 borderless=true {
+      plugin location="zellij:status-bar"
+    }
+  }
+  tab name="explorer" focus=true {
+    pane split_direction="vertical"{
+        pane {
+            name "swikly"
+            cwd "/home/kevin/dev/online-deposit-application-v2"
+          }
+        pane split_direction="horizontal" {
+            pane
+            pane
+        }
+    }
+  }
+  tab name="neovim" {}
+  tab name="btop" {
+    pane {
+      command "btop"
+    }
+  }
+}
