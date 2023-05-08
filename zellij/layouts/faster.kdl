@@ -39,8 +39,11 @@ layout{
             cwd "/home/kevin/dev/online-deposit-application-v2"
           }
         pane split_direction="horizontal" {
-            pane
-            pane
+            pane {
+              cwd "/home/kevin/dev/online-deposit-application-v2"
+              command "gitui"
+            }
+            pane {}
         }
     }
   }
