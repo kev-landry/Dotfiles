@@ -5,3 +5,28 @@ if status is-interactive
 end
 
 starship init fish | source
+
+
+# Aliases
+
+alias meteo "curl 'https://wttr.in?2QF' -H 'Accept-Language: fr'"
+alias laralog "cat (date +'server/storage/logs/laravel-%Y-%m-%d.log')"
+alias laradlog "tail -f -n 100 (date +'server/storage/logs/laravel-%Y-%m-%d.log')"
+
+# Git
+
+alias gfa "git fetch --all --prune"
+alias gaa "git add ."
+alias gc  "git commit -m $argv*"
+alias gp "git push origin HEAD"
+alias gs "git status"
+
+alias ... "cd ../../"
+alias .... "cd ../../../"
+alias ..... "cd ../../../../"
+
+# Make commands
+
+alias mbc "make before-commit"
+alias mtc "make typescript-check"
+alias msb "make server-bash"
