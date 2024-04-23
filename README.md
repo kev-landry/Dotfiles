@@ -157,3 +157,18 @@ Config
 cd Dotfiles &&
 stow -t ~/.config starship
 ```
+
+## Neovim
+
+Download & install
+```
+mkdir ~/Apps &&
+cd ~/Apps &&
+wget https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz &&
+tar xzvf nvim-linux64.tar.gz &&
+rm xzvf nvim-linux64.tar.gz
+```
+Then add nvim to PATH in `~/.profile`
+```
+export PATH="$PATH:/home/kevin/Apps/nvim-linux64/bin"
+```

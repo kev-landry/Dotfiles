@@ -19,6 +19,7 @@ alias gfa "git fetch --all --prune"
 alias gaa "git add ."
 alias gc  "git commit -m $argv*"
 alias gp "git push origin HEAD"
+alias gfp "git push -f origin HEAD"
 alias gs "git status"
 
 alias ... "cd ../../"
