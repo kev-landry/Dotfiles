@@ -21,6 +21,8 @@ alias gc  "git commit -m $argv*"
 alias gp "git push origin HEAD"
 alias gfp "git push -f origin HEAD"
 alias gs "git status"
+alias grc "git rebase --continue"
+alias grlc "git rebase -i HEAD~1"
 
 alias ... "cd ../../"
 alias .... "cd ../../../"
